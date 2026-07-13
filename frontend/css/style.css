@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #1a1a2e;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2b3a67;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover {
+  color: #2b6cb0;
+}
+
+.login-btn {
+  background: #2b6cb0;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #eaf1fb, #f5f7fa);
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #2b6cb0;
+  border: 1px solid #2b6cb0;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Category Cards */
+.categories {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.category-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.category-card h3 {
+  margin: 10px 0;
+}
+
+.category-card a {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Stats bar */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 30px;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats h2 {
+  color: #2b6cb0;
+}
+
+/* Scheme cards (for schemes list) */
+.schemes-container {
+  padding: 40px;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filters-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.scheme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.scheme-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.scheme-card .tag {
+  display: inline-block;
+  background: #e6f0fa;
+  color: #2b6cb0;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.scheme-card h3 {
+  margin-bottom: 8px;
+}
+
+.scheme-card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.scheme-card .benefit {
+  font-weight: bold;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.view-btn {
+  display: inline-block;
+  background: #2b6cb0;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.modal-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+}

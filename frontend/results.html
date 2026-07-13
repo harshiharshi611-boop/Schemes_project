@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eligibility Results - SGSP</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .results-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  .result-banner {
+    background: #e6f7ec;
+    color: #1a7a3c;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+  .result-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .result-info h3 {
+    margin-bottom: 5px;
+  }
+  .result-info p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .benefit-tag {
+    font-weight: bold;
+    color: #1a1a2e;
+  }
+  .note-box {
+    font-size: 13px;
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">SGSP</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="schemes.html">Schemes</a></li>
+    <li><a href="eligibility.html">Eligibility Check</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+  </ul>
+  <a href="#" class="login-btn">Login</a>
+</nav>
+
+<div class="results-container">
+  <div class="result-banner" id="resultBanner">Loading results...</div>
+  <div id="resultsList"></div>
+  <p class="note-box">Note: Eligibility is based on the information provided. Please check official guidelines before applying.</p>
+</div>
+
+<script src="js/results.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Check Eligibility - SGSP</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .form-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  .form-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .form-group {
+    margin-bottom: 18px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .submit-btn {
+    width: 100%;
+    background: #2b6cb0;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 15px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">SGSP</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="schemes.html">Schemes</a></li>
+    <li><a href="eligibility.html">Eligibility Check</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+  </ul>
+  <a href="login.html" class="login-btn">Login</a>
+</nav>
+
+<div class="form-container">
+  <h1>Check Your Eligibility</h1>
+  <p>Fill in your details to find schemes you are eligible for</p>
+
+  <div class="form-card">
+    <form id="eligibilityForm">
+      <div class="form-group">
+        <label>Category (Required)</label>
+        <select id="category" required>
+          <option value="">Select category</option>
+          <option value="Student">Student</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Physically Challenged">Physically Challenged</option>
+          <option value="Health & Wellness">Health & Wellness</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="text" id="mobile" placeholder="Enter your mobile number">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Gender</label>
+          <select id="gender">
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>State</label>
+          <input type="text" id="state" placeholder="Enter your state">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Annual Family Income (₹)</label>
+        <input type="number" id="income" placeholder="Enter annual income">
+      </div>
+
+      <button type="submit" class="submit-btn">Check Eligibility</button>
+    </form>
+    <p class="note">The information provided will be used only to find relevant schemes for you.</p>
+  </div>
+</div>
+
+<script src="js/eligibility.js"></script>
+</body>
+</html>

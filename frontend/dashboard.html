@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard - SGSP</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .dash-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  .welcome-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logout-btn {
+    background: #a52a1a;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .quick-links a {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-decoration: none;
+    color: #1a1a2e;
+    text-align: center;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">SGSP</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="schemes.html">Schemes</a></li>
+    <li><a href="eligibility.html">Eligibility Check</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+  </ul>
+</nav>
+
+<div class="dash-container">
+  <div class="welcome-card">
+    <h2 id="welcomeText">Welcome, Admin!</h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+<div class="quick-links">
+  <a href="manage-schemes.html">Manage Schemes</a>
+  <a href="schemes.html">View All Schemes</a>
+  <a href="eligibility.html">Check Eligibility</a>
+</div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
