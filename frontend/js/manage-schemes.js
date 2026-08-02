@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://sgsp-backend.onrender.com/api';
 const token = localStorage.getItem('token');
 
 if (!token) {
