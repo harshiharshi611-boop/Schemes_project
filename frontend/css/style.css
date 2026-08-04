@@ -229,3 +229,33 @@ body {
   max-height: 85vh;
   overflow-y: auto;
 }
+/* Language Translator Widget */
+.translate-container {
+  display: flex;
+  align-items: center;
+}
+
+#google_translate_element {
+  display: inline-block;
+}
+
+#google_translate_element .goog-te-gadget {
+  font-size: 0 !important;
+}
+
+#google_translate_element .goog-te-gadget-simple {
+  background-color: #f5f7fa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
